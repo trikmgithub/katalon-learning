@@ -13,6 +13,7 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject
+import groovy.json.JsonBuilder
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -24,35 +25,94 @@ import internal.GlobalVariable
 import org.apache.commons.collections4.map.HashedMap
 import org.openqa.selenium.Keys as Keys
 
-//String token = GlobalVariable.G_UserNameToken
-//
-//Map<String, Object> variables = new HashMap<>()
-//
-//variables.put('myToken', token)
-//
-//resp = WS.sendRequest(findTestObject('UpdateBooking', variables))
-//
-//WS.verifyResponseStatusCode(resp, Integer.parseInt(statusCode))
+def tokenRepository = findTestObject('CreateToken', [
+	('body') : """
+    {
+        "username": "${GlobalVariable.G_UserName}",
+        "password": "${GlobalVariable.G_Password}"
+    }
+    """
+])
+
+def tokenResponse = WS.sendRequest(tokenRepository)
+
+WS.verifyResponseStatusCode(tokenResponse, 200)
+
+def tokenResponseBody = tokenResponse.getResponseBodyContent()
+def tokenResponseJson = new JsonSlurper().parseText(tokenResponseBody)
+
+def tokenAuthen = tokenResponseJson.token
+
+def createBookingJson = new JsonBuilder([
+	firstname: "Jim",
+	lastname: "Brown",
+	totalprice: 111,
+	depositpaid: true,
+	bookingdates: [
+		checkin: "2018-01-01",
+		checkout: "2019-01-01"
+	],
+	additionalneeds: "Breakfast"
+]).toPrettyString()
+
+def createBookingRepository = findTestObject('CreateBooking', [
+    ('body'): createBookingJson
+])
+
+KeywordUtil.logInfo("Create booking request body:\n" + createBookingRepository.getVariables()['body'])
+
+def createBookingResponse = WS.sendRequest(createBookingRepository)
+
+WS.verifyResponseStatusCode(createBookingResponse, 200)
+
+def createBookingResponseBody = createBookingResponse.getResponseBodyContent()
+def createBookingResponseJson = new JsonSlurper().parseText(createBookingResponseBody)
+
+def bookingID = createBookingResponseJson.bookingid
+
+def updateBookingJson = new JsonBuilder([
+	firstname: firstName,
+	lastname: lastName,
+	totalprice: totalPrice as Double,
+	depositpaid: depositPaid.toBoolean(),
+	bookingdates: [
+		checkin: checkin,
+		checkout: checkout
+	],
+	additionalneeds: additionalNeeds
+]).toPrettyString()
 
 
-tokenObj = WS.sendRequest(findTestObject('CreateToken', [('username') : GlobalVariable.G_UserName, ('password') : GlobalVariable.G_Password]))
+def updateBookingRepository = findTestObject('UpdateBooking', [
+	('body'): updateBookingJson,
+	('bookingID'): bookingID,
+	('token'): tokenAuthen
+])
 
-KeywordUtil.logInfo("${GlobalVariable.G_UserName}" + "${GlobalVariable.G_Password}")
+KeywordUtil.logInfo("Update booking request body:\n" + updateBookingRepository.getVariables()['body'])
 
-WS.verifyResponseStatusCode(tokenObj, 200)
+def updateBookingResponse = WS.sendRequest(updateBookingRepository)
 
-String token = WS.getElementPropertyValue(tokenObj, 'token')
+def responseJson = new JsonSlurper().parseText(updateBookingResponse.getResponseText())
 
-Map<String, Object> variables = new HashMap<>()
+WS.verifyResponseStatusCode(updateBookingResponse, Integer.parseInt(statusCode))
 
-variables.put('myToken', token)
+WS.verifyElementPropertyValue(updateBookingResponse, 'firstname', firstName)
+assert responseJson.firstname == firstName
 
-resp = WS.sendRequest(findTestObject('UpdateBooking', variables))
+WS.verifyElementPropertyValue(updateBookingResponse, 'lastname', lastName)
 
-String resBody = resp.getResponseText()
+WS.verifyElementPropertyValue(updateBookingResponse, 'totalprice', totalPrice)
 
-KeywordUtil.logInfo(resBody)
+//WS.verifyElementPropertyValue(updateBookingResponse, 'depositpaid', depositPaid)
 
-WS.verifyResponseStatusCode(resp, Integer.parseInt(statusCode))
+//WS.verifyElementPropertyValue(updateBookingResponse, 'checkin', checkin)
+
+//WS.verifyElementPropertyValue(updateBookingResponse, 'checkout', checkout)
+
+WS.verifyElementPropertyValue(updateBookingResponse, 'additionalneeds', additionalNeeds)
+
+
+
 
 

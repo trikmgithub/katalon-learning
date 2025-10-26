@@ -30,61 +30,61 @@
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>ID</value>
-         <variableId>07c49224-5479-4695-a960-e7edfaf1ff94</variableId>
+         <variableId>68422cae-b245-4c0f-9293-9ffc85b55ed5</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>bookingID</value>
-         <variableId>cf54939d-7b47-4c43-8132-129734b1c88d</variableId>
+         <variableId>ceea74f8-58db-4b36-89c0-05751dbf26bb</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>firstName</value>
-         <variableId>d720554e-f6f1-4a11-8eae-e9f37ddafd73</variableId>
+         <variableId>76d389ec-5af5-496a-a171-6aae798e9758</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>lastName</value>
-         <variableId>e24157b4-07bf-4cda-b7fb-7388ff30b6f6</variableId>
+         <variableId>53a644b5-62d7-4e90-9d7b-8760004879f6</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>totalPrice</value>
-         <variableId>7205812b-0ed5-43cc-be6a-3ecc0355cd42</variableId>
+         <variableId>322c98b4-a174-4e9d-9a52-b3717330831f</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>depositPaid</value>
-         <variableId>342f9e18-b4fd-4013-a40a-ea5cc04fd314</variableId>
+         <variableId>e6f862b8-9ebe-4e81-a502-51a69f4c384d</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>checkin</value>
-         <variableId>13af349e-2072-4597-83ba-8995f2e72c0d</variableId>
+         <variableId>868ad1ec-fed6-4b2a-a485-134311da6efc</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>checkout</value>
-         <variableId>c1c1dc09-8a63-406b-9377-1f94c4e92c2a</variableId>
+         <variableId>305c911a-b5cc-429a-8534-a9d19f625c72</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>additionalNeeds</value>
-         <variableId>49c96b21-33ad-47bc-9529-ba61534738f4</variableId>
+         <variableId>5c88c769-027c-4ca5-9f5a-7b72b8508e1a</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>statusCode</value>
-         <variableId>a53676c9-1609-447f-8720-0c558bcc73b7</variableId>
+         <variableId>a7ee2e96-bbc6-40f6-ad94-ca34caea86e6</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

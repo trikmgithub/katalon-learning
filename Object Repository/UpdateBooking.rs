@@ -12,7 +12,7 @@
    <followRedirects>true</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;firstname\&quot; : \&quot;${firstName}\&quot;,\n    \&quot;lastname\&quot; : \&quot;${lastName}\&quot;,\n    \&quot;totalprice\&quot; : \&quot;${totalPrice}\&quot;,\n    \&quot;depositpaid\&quot; : \&quot;${depositPaid}\&quot;,\n    \&quot;bookingdates\&quot; : {\n        \&quot;checkin\&quot; : \&quot;${checkin}\&quot;,\n        \&quot;checkout\&quot; : \&quot;${checkout}\&quot;\n    },\n    \&quot;additionalneeds\&quot; : \&quot;${additionalNeeds}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;${body}\n&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -38,7 +38,7 @@
       <matchCondition>equals</matchCondition>
       <name>Cookie</name>
       <type>Main</type>
-      <value>token=${myToken}</value>
+      <value>token=${token}</value>
       <webElementGuid>f756f961-c23c-4a00-afc0-9e82771ac373</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
@@ -46,7 +46,7 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Basic=${myToken}</value>
+      <value>Basic=${token}</value>
       <webElementGuid>e62c8f59-c72b-4dde-b096-417275223381</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>10.3.2</katalonVersion>
@@ -54,7 +54,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>https://restful-booker.herokuapp.com/booking/1</restUrl>
+   <restUrl>https://restful-booker.herokuapp.com/booking/${bookingID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

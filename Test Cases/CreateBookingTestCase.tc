@@ -6,15 +6,6 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>e7697ea6-c049-48fe-b172-068925cf84d4</testCaseGuid>
-   <testDataLinks>
-      <combinationType>ONE</combinationType>
-      <id>c429af2a-9894-41be-bd4a-f764024f0943</id>
-      <iterationEntity>
-         <iterationType>ALL</iterationType>
-         <value></value>
-      </iterationEntity>
-      <testDataId>Data Files/CreateBookingDataFiles</testDataId>
-   </testDataLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
