@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CreateTokenTestCases</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>66022b08-0c95-4681-a4c6-4f5d570c38c2</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>0182e561-56bf-4784-9832-b829cf21b51d</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/CreateTokenDataFiles</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>0182e561-56bf-4784-9832-b829cf21b51d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>username</value>
+      <variableId>14285d3b-9b32-4104-bacc-046a08b5adb9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>0182e561-56bf-4784-9832-b829cf21b51d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>password</value>
+      <variableId>7b291190-680d-414e-8184-423759c04fbb</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'admin'</defaultValue>
+      <description></description>
+      <id>14285d3b-9b32-4104-bacc-046a08b5adb9</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'password123'</defaultValue>
+      <description></description>
+      <id>7b291190-680d-414e-8184-423759c04fbb</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

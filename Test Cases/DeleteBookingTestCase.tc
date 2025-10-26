@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DeleteBookingTestCase</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c562e830-3225-4129-b382-fe52e0d09c0a</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>b53bc3df-8b7c-4d9b-a740-9f52fa163041</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/DeleteBookingDataFile</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>b53bc3df-8b7c-4d9b-a740-9f52fa163041</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>ID</value>
+      <variableId>bc252c3b-f655-4dd4-a581-13976818ce12</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>b53bc3df-8b7c-4d9b-a740-9f52fa163041</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>bookingID</value>
+      <variableId>f36e42fa-0eec-458b-be2f-9dbe92a6c0ac</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>b53bc3df-8b7c-4d9b-a740-9f52fa163041</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>statusCode</value>
+      <variableId>0a4c2601-bfd3-470d-ad7c-717bf1a62015</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bc252c3b-f655-4dd4-a581-13976818ce12</id>
+      <masked>false</masked>
+      <name>ID</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f36e42fa-0eec-458b-be2f-9dbe92a6c0ac</id>
+      <masked>false</masked>
+      <name>bookingID</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0a4c2601-bfd3-470d-ad7c-717bf1a62015</id>
+      <masked>false</masked>
+      <name>statusCode</name>
+   </variable>
+</TestCaseEntity>

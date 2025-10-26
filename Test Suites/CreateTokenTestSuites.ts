@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>CreateTokenTestSuites</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>10</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>172b822d-32dc-4bd4-a4e7-8d856ef7b19b</testSuiteGuid>
+   <testCaseLink>
+      <guid>0b36be48-62cb-4d8b-9193-13eb6fcdb8d4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CreateTokenTestCases</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>d105aa59-5aeb-40f8-8231-b8317243686f</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/CreateTokenDataFiles</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>d105aa59-5aeb-40f8-8231-b8317243686f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>username</value>
+         <variableId>14285d3b-9b32-4104-bacc-046a08b5adb9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>d105aa59-5aeb-40f8-8231-b8317243686f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
+         <variableId>7b291190-680d-414e-8184-423759c04fbb</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
