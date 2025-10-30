@@ -29,43 +29,43 @@
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>ID</value>
+         <value>id</value>
          <variableId>68422cae-b245-4c0f-9293-9ffc85b55ed5</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>bookingID</value>
+         <value>firstName</value>
          <variableId>ceea74f8-58db-4b36-89c0-05751dbf26bb</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>firstName</value>
+         <value>lastName</value>
          <variableId>76d389ec-5af5-496a-a171-6aae798e9758</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>lastName</value>
+         <value>totalPrice</value>
          <variableId>53a644b5-62d7-4e90-9d7b-8760004879f6</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>totalPrice</value>
+         <value>depositPaid</value>
          <variableId>322c98b4-a174-4e9d-9a52-b3717330831f</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>depositPaid</value>
+         <value>checkin</value>
          <variableId>e6f862b8-9ebe-4e81-a502-51a69f4c384d</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>checkin</value>
+         <value>endPoint</value>
          <variableId>868ad1ec-fed6-4b2a-a485-134311da6efc</variableId>
       </variableLink>
       <variableLink>
@@ -83,8 +83,20 @@
       <variableLink>
          <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>statusCode</value>
+         <value>objectRepository</value>
          <variableId>a7ee2e96-bbc6-40f6-ad94-ca34caea86e6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>testCase</value>
+         <variableId>fdbcd320-2c47-4e71-b93d-761bf7985b76</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>d39d5483-148c-483a-b302-09eaa962cbc7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>statusCode</value>
+         <variableId>e3a88051-9e70-488e-8129-a35dc910b849</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

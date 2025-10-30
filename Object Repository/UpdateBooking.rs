@@ -54,7 +54,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>https://restful-booker.herokuapp.com/booking/${bookingID}</restUrl>
+   <restUrl>${url}/${bookingID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

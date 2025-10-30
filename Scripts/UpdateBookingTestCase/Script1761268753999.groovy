@@ -25,6 +25,8 @@ import internal.GlobalVariable
 import org.apache.commons.collections4.map.HashedMap
 import org.openqa.selenium.Keys as Keys
 
+KeywordUtil.logInfo(">>> ${testCase} <<<")
+
 def tokenRepository = findTestObject('CreateToken', [
 	('body') : """
     {
@@ -73,8 +75,8 @@ def bookingID = createBookingResponseJson.bookingid
 def updateBookingJson = new JsonBuilder([
 	firstname: firstName,
 	lastname: lastName,
-	totalprice: totalPrice as Double,
-	depositpaid: depositPaid.toBoolean(),
+	totalprice: totalPrice,
+	depositpaid: depositPaid,
 	bookingdates: [
 		checkin: checkin,
 		checkout: checkout
@@ -82,11 +84,13 @@ def updateBookingJson = new JsonBuilder([
 	additionalneeds: additionalNeeds
 ]).toPrettyString()
 
+def url = endPoint
 
-def updateBookingRepository = findTestObject('UpdateBooking', [
+def updateBookingRepository = findTestObject(objectRepository, [
 	('body'): updateBookingJson,
 	('bookingID'): bookingID,
-	('token'): tokenAuthen
+	('token'): tokenAuthen,
+	('url'): url,
 ])
 
 KeywordUtil.logInfo("Update booking request body:\n" + updateBookingRepository.getVariables()['body'])
@@ -111,6 +115,20 @@ WS.verifyElementPropertyValue(updateBookingResponse, 'totalprice', totalPrice)
 //WS.verifyElementPropertyValue(updateBookingResponse, 'checkout', checkout)
 
 WS.verifyElementPropertyValue(updateBookingResponse, 'additionalneeds', additionalNeeds)
+
+def getBookingRepository = findTestObject('Object Repository/GetBooking', [
+	('bookingID'): bookingID,
+])
+
+def getBookingResponse = WS.sendRequest(getBookingRepository)
+
+def getBookingResponseJson = new JsonSlurper().parseText(getBookingResponse.getResponseText())
+
+WS.verifyResponseStatusCode(getBookingResponse, 200)
+
+KeywordUtil.logInfo(getBookingResponseJson.toString())
+
+WS.verifyElementPropertyValue(getBookingResponse, 'firstname', firstName)
 
 
 

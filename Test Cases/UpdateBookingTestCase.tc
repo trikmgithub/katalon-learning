@@ -18,44 +18,44 @@
    <variableLinks>
       <testDataLinkId>356d4e4f-c5d0-4b85-a8a3-4f3dac1ff623</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>ID</value>
+      <value>id</value>
       <variableId>68422cae-b245-4c0f-9293-9ffc85b55ed5</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>356d4e4f-c5d0-4b85-a8a3-4f3dac1ff623</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>bookingID</value>
-      <variableId>ceea74f8-58db-4b36-89c0-05751dbf26bb</variableId>
+      <value>testCase</value>
+      <variableId>fdbcd320-2c47-4e71-b93d-761bf7985b76</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>356d4e4f-c5d0-4b85-a8a3-4f3dac1ff623</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>firstName</value>
-      <variableId>76d389ec-5af5-496a-a171-6aae798e9758</variableId>
+      <variableId>ceea74f8-58db-4b36-89c0-05751dbf26bb</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>356d4e4f-c5d0-4b85-a8a3-4f3dac1ff623</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>lastName</value>
-      <variableId>53a644b5-62d7-4e90-9d7b-8760004879f6</variableId>
+      <variableId>76d389ec-5af5-496a-a171-6aae798e9758</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>356d4e4f-c5d0-4b85-a8a3-4f3dac1ff623</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>totalPrice</value>
-      <variableId>322c98b4-a174-4e9d-9a52-b3717330831f</variableId>
+      <variableId>53a644b5-62d7-4e90-9d7b-8760004879f6</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>356d4e4f-c5d0-4b85-a8a3-4f3dac1ff623</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>depositPaid</value>
-      <variableId>e6f862b8-9ebe-4e81-a502-51a69f4c384d</variableId>
+      <variableId>322c98b4-a174-4e9d-9a52-b3717330831f</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>356d4e4f-c5d0-4b85-a8a3-4f3dac1ff623</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>checkin</value>
-      <variableId>868ad1ec-fed6-4b2a-a485-134311da6efc</variableId>
+      <variableId>e6f862b8-9ebe-4e81-a502-51a69f4c384d</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>356d4e4f-c5d0-4b85-a8a3-4f3dac1ff623</testDataLinkId>
@@ -72,55 +72,67 @@
    <variableLinks>
       <testDataLinkId>356d4e4f-c5d0-4b85-a8a3-4f3dac1ff623</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>statusCode</value>
+      <value>endPoint</value>
+      <variableId>868ad1ec-fed6-4b2a-a485-134311da6efc</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>356d4e4f-c5d0-4b85-a8a3-4f3dac1ff623</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>objectRepository</value>
       <variableId>a7ee2e96-bbc6-40f6-ad94-ca34caea86e6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>356d4e4f-c5d0-4b85-a8a3-4f3dac1ff623</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>statusCode</value>
+      <variableId>e3a88051-9e70-488e-8129-a35dc910b849</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>68422cae-b245-4c0f-9293-9ffc85b55ed5</id>
       <masked>false</masked>
-      <name>ID</name>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fdbcd320-2c47-4e71-b93d-761bf7985b76</id>
+      <masked>false</masked>
+      <name>testCase</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>ceea74f8-58db-4b36-89c0-05751dbf26bb</id>
       <masked>false</masked>
-      <name>bookingID</name>
+      <name>firstName</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>76d389ec-5af5-496a-a171-6aae798e9758</id>
       <masked>false</masked>
-      <name>firstName</name>
+      <name>lastName</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>53a644b5-62d7-4e90-9d7b-8760004879f6</id>
       <masked>false</masked>
-      <name>lastName</name>
+      <name>totalPrice</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>322c98b4-a174-4e9d-9a52-b3717330831f</id>
       <masked>false</masked>
-      <name>totalPrice</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>e6f862b8-9ebe-4e81-a502-51a69f4c384d</id>
-      <masked>false</masked>
       <name>depositPaid</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>868ad1ec-fed6-4b2a-a485-134311da6efc</id>
+      <id>e6f862b8-9ebe-4e81-a502-51a69f4c384d</id>
       <masked>false</masked>
       <name>checkin</name>
    </variable>
@@ -141,7 +153,21 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
+      <id>868ad1ec-fed6-4b2a-a485-134311da6efc</id>
+      <masked>false</masked>
+      <name>endPoint</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
       <id>a7ee2e96-bbc6-40f6-ad94-ca34caea86e6</id>
+      <masked>false</masked>
+      <name>objectRepository</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e3a88051-9e70-488e-8129-a35dc910b849</id>
       <masked>false</masked>
       <name>statusCode</name>
    </variable>
